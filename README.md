@@ -1,22 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Project Overview
+## North Carolina Mobile Home Parks Map
 
-## Getting Started
+This project is a simple Next.js application integrated with the Google Maps API to display mobile home parks across North Carolina. It allows users to interact with the map, zoom, pan, and click on markers to get more information about each park. Additional features include search functionality and filtering based on park attributes like size and amenities.
 
-First, run the development server:
-
+## Features
+- Google Maps Integration: Displays a map centered on North Carolina.
+- Interactive Markers: Markers on the map represent mobile home parks. Users can click these to view detailed information.
+- Search Functionality: Users can search for parks by name to quickly find specific locations.
+- Dynamic Filtering: Filters allow users to view parks that meet specific criteria, such as size or available amenities.
+  
+## Setup Instructions
+## Prerequisites
+- Node.js installed on your machine
+- A Google Maps API key
+  
+## Installation
+- Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone git@github.com:sash7410/mobile-home-park.git;
+cd mobile-home-park;
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Set up environment variables:
+- Create a .env.local file in the root directory.
+- Add your Google Maps API key to the file:
+```bash
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=YOUR_API_KEY_HERE
+```
+- Run the development server:
+```bash
+npm run dev
+```
+- Visit http://localhost:3000 in your browser to view the app.
+  
+## Usage Instructions
+- Navigating the Map: Use mouse controls or touch gestures to pan and zoom the map.
+- Viewing Park Information: Click on any park marker to open an information window with details about the park.
+- Using Search and Filters:
+- Search: Enter the name of a park in the search bar to filter markers dynamically as you type.
+- Filters: Select from the dropdown options to filter parks by sizes and amenities. Multiple selections are supported for comprehensive filtering.
+
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
